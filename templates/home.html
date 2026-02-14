@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Demo Store</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<nav>
+<a href="/">Home</a>
+<a href="/catalog">Catalog</a>
+<a href="/products">Products</a>
+<a href="/about">About</a>
+<a href="/contact">Contact</a>
+<a href="/cart">🛒 Cart ({{ cart_count }})</a>
+</nav>
+
+<h2>Welcome to Demo Store</h2>
+
+<div class="hero">
+<a href="/products">
+<img src="{{ url_for('static', filename='images/banner2.jpg') }}">
+<h2>Featured Products</h2>
+<img src="{{ url_for('static', filename='images/banner2.jpg') }}">
+</a>
+</div>
+
+<footer>
+Demo Store © 2026
+</footer>
+
+</body>
+</html>

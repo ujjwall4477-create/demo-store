@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<nav>
+<a href="/">Home</a>
+<a href="/catalog">Catalog</a>
+<a href="/products">Products</a>
+<a href="/about">About</a>
+<a href="/contact">Contact</a>
+<a href="/cart">🛒 Cart ({{ cart_count }})</a>
+</nav>
+
+<div class="contact-box">
+
+<h2>Contact Us</h2>
+
+<form>
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Your Email" required>
+
+<textarea placeholder="Your Message"></textarea>
+
+<button>Send Message</button>
+</form>
+
+<div class="owner">
+<p>📞 8247571766</p>
+<p>📧 johndoe@example.com</p>
+</div>
+
+</div>
+
+</body>
+</html>
